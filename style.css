@@ -1,118 +1,291 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+body {
+  background-color: gray;
+  font-family: "Open Sans", sans-serif;
+}
+body .container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 95%;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 30px;
+  margin: 30px 0;
+}
+body .container div:hover .line {
+  border: none;
+}
+body .container div {
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  justify-items: center;
+}
+body .container div:hover {
+  transform: scale(1.06);
+  transition-duration: 0.7s;
+  overflow: hidden;
+}
+body .container div button {
+  border: none;
+  width: 40%;
+  height: 60%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+body .container div button:hover {
+  background-color: aqua;
+  transition-duration: 0.7s;
+  transform: scale(1.1);
+}
+body .container div .line {
+  border: 1px solid gray;
+  width: 30%;
+  height: 0;
+}
+body .container div img {
+  width: 60%;
+  padding-top: 10px;
+  justify-self: center;
+}
+body .container2 {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 95%;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 30px;
+  margin: 30px 0;
+}
+body .container2 div {
+  display: grid;
+  justify-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+body .container2 div .line {
+  border: 1px solid gray;
+  width: 30%;
+  height: 0;
+}
+body .container2 div img {
+  width: 60%;
+  padding-top: 10px;
+  justify-self: center;
+}
+body .container2 div button {
+  border: none;
+  width: 40%;
+  height: 60%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+body .container2 div button:hover {
+  background-color: aqua;
+  transition-duration: 0.7s;
+  transform: scale(1.1);
+}
 
-body{
-    background-color: lightgray;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-@media (min-width: 300px){
-    .container{
-        display: grid;
-        grid-template-columns: repeat(1, 80%);
-        grid-template-rows: repeat(4, 50%);
-        justify-content: center;
-        align-items: center;
-        grid-gap: 30px;
-    }
-}
-@media (min-width: 600px){
-    .container{
-        display: grid;
-        grid-template-columns: repeat(2, 45%);
-        grid-template-rows: repeat(4, 50%);
-        grid-gap: 30px;
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media (min-width: 900px) {
-    .container{
-        display: grid;
-        grid-template-columns: repeat(4, 20%);
-        grid-template-rows: repeat(2, 45%);
-        grid-gap: 20px;
-        justify-content: center;
-        align-items: center;
-        margin: 5px; 
-    }
-}
-.container > div{
+@media only screen and (min-width: 410px) {
+  body {
+    background-color: gray;
+    font-family: "Open Sans", sans-serif;
+  }
+  body .container {
     display: grid;
     justify-content: center;
+    text-align: center;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    margin: 30px 0;
+  }
+  body .container div:hover .line {
+    border: none;
+  }
+  body .container div {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;
+  }
+  body .container div:hover {
+    transform: scale(1.06);
+    transition-duration: 0.7s;
+    overflow: hidden;
+  }
+  body .container div button {
+    border: none;
+    width: 40%;
+    height: 60%;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  body .container div button:hover {
+    background-color: aqua;
+    transition-duration: 0.7s;
+    transform: scale(1.1);
+  }
+  body .container div .line {
+    border: 1px solid gray;
+    width: 30%;
+    height: 0;
+  }
+  body .container div img {
+    width: 60%;
+    padding-top: 10px;
+    justify-self: center;
+  }
+  body .container2 {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    margin: 30px 0;
+  }
+  body .container2 div {
+    display: grid;
+    justify-items: center;
+    background-color: white;
+    border-radius: 10px;
+  }
+  body .container2 div:hover {
+    transform: scale(1.06);
+    transition-duration: 0.7s;
+    overflow: hidden;
+  }
+  body .container2 div .line {
+    border: 1px solid gray;
+    width: 30%;
+    height: 0;
+  }
+  body .container2 div img {
+    width: 60%;
+    padding-top: 10px;
+    justify-self: center;
+  }
+  body .container2 div button {
+    border: none;
+    width: 40%;
+    height: 60%;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  body .container2 div button:hover {
+    background-color: aqua;
+    transition-duration: 0.7s;
+    transform: scale(1.1);
+  }
+  body .container2 div:hover .line {
+    border: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: gray;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    height: 100vh;
+  }
+  body .container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+    margin: 0;
+  }
+  body .container div:hover .line {
+    border: none;
+  }
+  body .container div {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 45% 5% 25% 5% 20%;
+  }
+  body .container div:hover {
+    transform: scale(1.06);
+    transition-duration: 0.7s;
+    overflow: hidden;
+  }
+  body .container div button {
+    border: none;
+    width: 40%;
+    height: 60%;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  body .container div button:hover {
+    background-color: aqua;
+    transition-duration: 0.7s;
+    transform: scale(1.1);
+  }
+  body .container div .line {
+    border: 1px solid gray;
+    width: 30%;
+    height: 0;
+  }
+  body .container div img {
+    width: 60%;
+    height: 100%;
+    padding-top: 10px;
+    justify-self: center;
+  }
+  body .container2 {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+    margin-top: 0;
+  }
+  body .container2 div {
+    display: grid;
+    justify-items: center;
     align-items: center;
     background-color: white;
-    border-radius: 1%;
-    
-}
-div{
-    place-items: center;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-header{
-    place-items: center;
-    justify-content: center;
-    align-content: center;
-    height: fit-content;
-}
-footer{
-    place-items: center;
-    justify-content: center;
-    align-content: center;
-    height: fit-content;
-
-}
-.placeholder{
-    width: 70px;
-    height: 70px;
-}
-p{
-    text-align: center;
-    width: fit-content;
-   
-    color: #8d8c8c;
-}
-h5{
-    text-align: center;
-    width: fit-content;
-  
-}
-img{
-    text-align: center;
-    width: fit-content;
-    height: 50px;
-    margin-top: 10px;
-}
-button{ 
-    border: none;
-    border-radius: 40%;
-    margin-bottom: 5px;
-    width: 100px;
-
-    color: white;
-    background-color: gray;
-}
-button:hover{
-    transition-duration: 1s;
-    transform: scale(1.1);
-    background-color: #5dcacb;
-    border: 1px solid gray;    padding-top: 50%;
-}
-.line{
-    height: 0;
-    width: 35%;
-    border: 1px solid gray;
-    margin-bottom: 5px;
-}
-div{
-    justify-content: center;
-    align-items: center;
-}
-div:hover{
+    border-radius: 10px;
+    grid-template-rows: 45% 5% 25% 5% 20%;
+  }
+  body .container2 div:hover {
+    transform: scale(1.06);
     transition-duration: 0.7s;
-    transform: scale(1.05);
-}
-div:hover .line{
+    overflow: hidden;
+  }
+  body .container2 div .line {
+    border: 1px solid gray;
+    width: 30%;
+    height: 0;
+  }
+  body .container2 div img {
+    width: 60%;
+    justify-self: center;
+  }
+  body .container2 div button {
     border: none;
-}
+    width: 40%;
+    height: 60%;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  body .container2 div button:hover {
+    background-color: aqua;
+    transition-duration: 0.7s;
+    transform: scale(1.1);
+  }
+  body .container2 div:hover .line {
+    border: none;
+  }
+}/*# sourceMappingURL=style.css.map */

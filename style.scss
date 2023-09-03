@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    background-color: gray;
+    font-family: 'Open Sans', sans-serif;
+
+    .container {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: 95%;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 30px;
+        margin: 30px 0;
+
+        div:hover .line {
+            border: none;
+        }
+
+        div {
+            background-color: white;
+            border-radius: 10px;
+            display: grid;
+            justify-items: center;
+
+            &:hover {
+                transform: scale(1.06);
+                transition-duration: 0.7s;
+                overflow: hidden;
+            }
+
+            button {
+                border: none;
+                width: 40%;
+                height: 60%;
+                border-radius: 10px;
+                margin: 10px 0;
+
+                &:hover {
+                    background-color: aqua;
+                    transition-duration: 0.7s;
+                    transform: scale(1.1);
+                }
+
+            }
+
+            .line {
+                border: 1px solid gray;
+                width: 30%;
+                height: 0;
+            }
+
+            img {
+                width: 60%;
+                padding-top: 10px;
+                justify-self: center;
+            }
+        }
+    }
+
+    .container2 {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: 95%;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 30px;
+        margin: 30px 0;
+
+        div {
+            display: grid;
+            justify-items: center;
+            background-color: white;
+            border-radius: 10px;
+
+            .line {
+                border: 1px solid gray;
+                width: 30%;
+                height: 0;
+            }
+
+            img {
+                width: 60%;
+                padding-top: 10px;
+                justify-self: center;
+            }
+
+            button {
+                border: none;
+                width: 40%;
+                height: 60%;
+                border-radius: 10px;
+                margin: 10px 0;
+
+                &:hover {
+                    background-color: aqua;
+                    transition-duration: 0.7s;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 410px) {
+    body {
+        background-color: gray;
+        font-family: 'Open Sans', sans-serif;
+    
+        .container {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            grid-template-columns: 45% 45%;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 30px;
+            margin: 30px 0;
+    
+            div:hover .line {
+                border: none;
+            }
+    
+            div {
+                background-color: white;
+                border-radius: 10px;
+                display: grid;
+                justify-items: center;
+    
+                &:hover {
+                    transform: scale(1.06);
+                    transition-duration: 0.7s;
+                    overflow: hidden;
+                }
+    
+                button {
+                    border: none;
+                    width: 40%;
+                    height: 60%;
+                    border-radius: 10px;
+                    margin: 10px 0;
+    
+                    &:hover {
+                        background-color: aqua;
+                        transition-duration: 0.7s;
+                        transform: scale(1.1);
+                    }
+    
+                }
+    
+                .line {
+                    border: 1px solid gray;
+                    width: 30%;
+                    height: 0;
+                }
+    
+                img {
+                    width: 60%;
+                    padding-top: 10px;
+                    justify-self: center;
+                }
+            }
+        }
+    
+        .container2 {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            grid-template-columns: 45% 45%;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 30px;
+            margin: 30px 0;
+    
+            div {
+                display: grid;
+                justify-items: center;
+                background-color: white;
+                border-radius: 10px;
+                &:hover {
+                    transform: scale(1.06);
+                    transition-duration: 0.7s;
+                    overflow: hidden;
+                }
+    
+                .line {
+                    border: 1px solid gray;
+                    width: 30%;
+                    height: 0;
+                }
+    
+                img {
+                    width: 60%;
+                    padding-top: 10px;
+                    justify-self: center;
+                }
+    
+                button {
+                    border: none;
+                    width: 40%;
+                    height: 60%;
+                    border-radius: 10px;
+                    margin: 10px 0;
+    
+                    &:hover {
+                        background-color: aqua;
+                        transition-duration: 0.7s;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            div:hover .line {
+                border: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-color: gray;
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        height: 100vh;
+    
+        .container {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-rows: repeat(1, 1fr);
+            gap: 30px;
+            margin: 0;
+    
+            div:hover .line {
+                border: none;
+            }
+    
+            div {
+                background-color: white;
+                border-radius: 10px;
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                grid-template-rows: 45% 5% 25% 5% 20%;
+    
+                &:hover {
+                    transform: scale(1.06);
+                    transition-duration: 0.7s;
+                    overflow: hidden;
+                }
+    
+                button {
+                    border: none;
+                    width: 40%;
+                    height: 60%;
+                    border-radius: 10px;
+                    margin: 10px 0;
+    
+                    &:hover {
+                        background-color: aqua;
+                        transition-duration: 0.7s;
+                        transform: scale(1.1);
+                    }
+    
+                }
+    
+                .line {
+                    border: 1px solid gray;
+                    width: 30%;
+                    height: 0;
+                }
+    
+                img {
+                    width: 60%;
+                    height: 100%;
+                    padding-top: 10px;
+                    justify-self: center;
+                }
+            }
+        }
+    
+        .container2 {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-rows: repeat(1, 1fr);
+            gap: 30px;
+            margin-top: 0;  
+            div {
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                background-color: white;
+                border-radius: 10px;
+                grid-template-rows: 45% 5% 25% 5% 20%;
+                &:hover {
+                    transform: scale(1.06);
+                    transition-duration: 0.7s;
+                    overflow: hidden;
+                }
+    
+                .line {
+                    border: 1px solid gray;
+                    width: 30%;
+                    height: 0;
+                }
+    
+                img {
+                    width: 60%;
+
+                    justify-self: center;
+                }
+    
+                button {
+                    border: none;
+                    width: 40%;
+                    height: 60%;
+                    border-radius: 10px;
+                    margin: 10px 0;
+    
+                    &:hover {
+                        background-color: aqua;
+                        transition-duration: 0.7s;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            div:hover .line {
+                border: none;
+            }
+        }
+    }
+}
